@@ -2,7 +2,7 @@
 title: ES2015+
 category: JavaScript
 layout: 2017/sheet
-tags: [Featured]
+tags: [Featured, Frontend]
 updated: 2019-11-14
 weight: -10
 intro: |

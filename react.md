@@ -3,7 +3,7 @@ title: React.js
 category: React
 layout: 2017/sheet
 ads: true
-tags: [Featured]
+tags: [Featured, Frontend]
 updated: 2020-07-05
 weight: -10
 keywords:

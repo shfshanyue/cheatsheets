@@ -1,5 +1,6 @@
 ---
 title: TypeScript
+tags: [Frontend]
 category: JavaScript libraries
 ---
 

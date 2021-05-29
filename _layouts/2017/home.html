@@ -1,9 +1,7 @@
 <!doctype html>
 <html class='NoJs' lang='en'><head>
 
-{% assign featured_pages = site.pages
-  | where_exp: "page", "page.tags contains 'Featured'"
-%}
+{% assign featured_pages = site.data.content.fe %}
 {% assign recent_pages = site.pages
   | where_exp: "page", "page.updated"
   | sort: "updated", "first"
@@ -12,7 +10,7 @@
 
 </head><body class='UseCompactHeader HighlightPubFirstLine'>
 
-{% include 2017/top-nav.html page=page is_home=true noedit=true noback=true %}
+{% include 2017/top-nav.html page=page is_home=true noedit=true noback=true noshare=true %}
 
 <div class='body-area -slim'>
   <div class='site-header' role='banner'>
