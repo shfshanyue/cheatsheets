@@ -2,6 +2,14 @@
 <html class='NoJs' lang='en'><head>
 
 {% assign featured_pages = site.data.content.fe %}
+{% assign fe_pages = site.pages
+  | where_exp: "page", "page.tags contains 'Frontend'"
+  | sort: "weight", "last"
+%}
+{% assign editor_pages = site.pages
+  | where_exp: "page", "page.tags contains 'Editor'"
+  | sort: "weight", "last"
+%}
 {% assign recent_pages = site.pages
   | where_exp: "page", "page.updated"
   | sort: "updated", "first"
@@ -32,6 +40,22 @@
 
   <div class='pages-list' role='main'>
     {% for page in featured_pages %}
+      {% include 2017/pages-list-item.html page=page class='item top-sheet' %}
+    {% endfor %}
+
+    <h2 class='category item' data-js-searchable-header>
+      <span>前端常用编辑工具</span>
+    </h2>
+
+    {% for page in editor_pages %}
+      {% include 2017/pages-list-item.html page=page class='item top-sheet' %}
+    {% endfor %}
+
+    <h2 class='category item' data-js-searchable-header>
+      <span>前端技术栈图谱</span>
+    </h2>
+
+    {% for page in fe_pages %}
       {% include 2017/pages-list-item.html page=page class='item top-sheet' %}
     {% endfor %}
 

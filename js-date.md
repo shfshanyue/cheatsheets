@@ -1,5 +1,6 @@
 ---
 title: JavaScript Date
+tags: [Frontend]
 category: JavaScript
 layout: 2017/sheet
 weight: -3

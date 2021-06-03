@@ -1,5 +1,6 @@
 ---
 title: JavaScript Arrays
+tags: [Frontend]
 category: JavaScript
 layout: 2017/sheet
 ---

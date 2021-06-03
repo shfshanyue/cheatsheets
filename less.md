@@ -1,5 +1,6 @@
 ---
 title: Less.js
+tags: [Frontend]
 ---
 
 ### Functions

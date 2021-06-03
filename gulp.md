@@ -1,6 +1,7 @@
 ---
 title: Gulp
 category: JavaScript libraries
+tags: [Frontend]
 ---
 
  * gulp-ruby-sass
